@@ -9,6 +9,7 @@ import java.util.UUID;
 public class Resume  implements Comparable<Resume>{
 
     private  final String uuid;
+    private  String fullName;
 
     public Resume() {
         this(UUID.randomUUID().toString());
@@ -17,7 +18,6 @@ public class Resume  implements Comparable<Resume>{
     public Resume(String uuid) {
         this.uuid = uuid;
     }
-
 
     @Override
     public boolean equals(Object o) {
